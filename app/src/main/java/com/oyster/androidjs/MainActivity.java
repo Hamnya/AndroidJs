@@ -95,7 +95,10 @@ public class MainActivity extends Activity {
         mWebView.loadUrl(url);
         mWebView.setWebViewClient(new WishWebViewClient());
 
-        //자바스크립트에서 안드로이드 함수 부르기 위해 삽입. 인터페이스 등록
+        /*자바스크립트에서 안드로이드 함수 부르기 위해 삽입. 인터페이스 등록
+        * 이때 2번째 파라미터인 "Android"는 자바스크립트에서 부를때 사용됨.
+        * 만약 HybridApp 이라고 놓으면. 자바스크립트는 HybridApp.showToast(toast)로 불러야함
+        */
         mWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
         mWebView.setWebChromeClient(new WebChromeClient(){
