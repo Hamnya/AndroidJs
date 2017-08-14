@@ -1,5 +1,5 @@
 # AndroidJs
-웹뷰와 자바스크립트 통신
+##웹뷰와 자바스크립트 통신
 
  Webview in Android is like hybrid App.
  
@@ -7,17 +7,18 @@
  
  
  This is simple html code.
- 
+ <code>
 <input type="button" value="click" onClick="showAndroidToast('im parameter value')" />
-
 <script type="text/javascript">
     function showAndroidToast(toast) {
         Android.showToast(toast);
     }
 </script>
+</code>
+
 
 This is From
-http://202psj.tistory.com/923 [알레폰드의 IT 이모저모]
+<http://202psj.tistory.com/923 [알레폰드의 IT 이모저모]>
 
 
 
