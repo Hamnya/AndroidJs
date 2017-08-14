@@ -9,6 +9,7 @@
  This is simple html code.
  
 <input type="button" value="click" onClick="showAndroidToast('im parameter value')" />
+
 <script type="text/javascript">
     function showAndroidToast(toast) {
         Android.showToast(toast);
